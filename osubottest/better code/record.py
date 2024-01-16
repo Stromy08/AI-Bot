@@ -63,9 +63,10 @@ while True:
 
     #run code from above
     record_screen()
-    # Stop recording when the user presses the 'q' key  #--- DOESN'T WORK! ---#
-    if cv2.waitKey(1) == ord("q"):                      #--- DOESN'T WORK! ---#
-        break                                           #--- DOESN'T WORK! ---#
+
+   # Stop recording when the user presses the 'q' key    #--- DOESN'T WORK! ---#
+#    if cv2.waitKey(1) == ord("q"):                      #--- DOESN'T WORK! ---#
+#        break                                           #--- DOESN'T WORK! ---#
 
 # Release the VideoWriter and close the OpenCV windows
 out.release()
