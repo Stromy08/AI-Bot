@@ -16,7 +16,6 @@ video_filename = output_filename + ".avi"
 
 
 
-
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
 out = cv2.VideoWriter(video_filename, fourcc, fps, screen_size)
 
